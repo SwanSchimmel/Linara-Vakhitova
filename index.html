@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Портфолио Junior верстальщика</title>
+    <title>Портфолио Вахитовой Линары</title>
   </head>
 
   <body>
@@ -24,26 +25,34 @@
 
     <section class="hero-image">
       <div class="container">
-       <h1 class="heading">Вахитова Линара</h1>
-       <p>Junior верстальщик</p>
+            <h1 class="heading">Вахитова Линара</h1>
+            <p>Создатель сайтов</p>
+        </div>
+
       </div>
     </section>
 
     <section class="intro">
       <div class="container">
-        <h2 class="subheading" id="about">Давайте познакомимся</h2>
-        <figure class="user-image">
-          <img src="files/user.jpg" width="928" height="536" alt="Фотография Неопознанного Енота">
-        </figure>
-        <div>
-          <h3>Пара слов о себе</h3>
-          <p>Приветствую!<br> Изначально по образованию я - химик, но меня увлекло создание сайтов. Мой путь в вебе начался с создания сайтов на Wordpress. В последствии я решила изучить HTML, CSS и JS, чтобы научиться верстать сайты с нуля. Всё это вылилось в самообучение и прохождение курсов. В результате всего этого появились навыки создания сайтов, которые я хотела бы повысить и профессионально расти уже в этом направлении. В наличии имеются знания по HTML, CSS, активно изучаю Git, less, Gulp, немного js и php, свободно говорю на английском. </p>
-        </div>
+            <h2 class="subheading" id="about">Давайте познакомимся</h2>
+
+            <figure class="user-image">
+              <img class="img-fluid rounded" src="files/user.jpg" width="928" height="536" alt="Фотография Неопознанного Енота">
+            </figure>
+
+            <div>
+              <h3>Пара слов о себе</h3>
+              <p>Приветствую!<br> Изначально по образованию я - химик, но меня увлекло создание сайтов. Мой путь в вебе начался с создания сайтов на Wordpress. В последствии я решила изучить HTML, CSS и JS, чтобы научиться верстать сайты с нуля. Всё это вылилось в самообучение и прохождение курсов. В результате всего этого появились навыки создания сайтов, которые я хотела бы повысить и профессионально расти уже в этом направлении. В наличии имеются знания по HTML, CSS, активно изучаю Git, less, Gulp, немного js и php, свободно говорю на английском. </p>
+            </div>
+
+
         <div>
           <h3>Чем могу быть полезен</h3>
           <p>Создаю на заказ сайты различных видов, учту все Ваши пожелания. По доступной цене.</p>
         </div>
 
+      </div>
+        <div class="container">
         <div class="skills">
           <h3>Мои навыки</h3>
           <dl class="skills-list">
@@ -60,46 +69,55 @@
 
     <section class="portfolio">
       <div class="container">
+
       <h2 class="subheading" id="work">Мои работы</h2>
 
-      <figure class="project-image">
-        <img src="files/altima-stroy.png" width="928" height="536" alt="Блог">
-      </figure>
+      <div class="row">
+        <div class="col-sm-6">
+          <figure class="project-image">
+            <img class="img-fluid img-thumbnail" src="files/altima-stroy.png" width="928" height="536" alt="Блог">
+          </figure>
 
-      <h3>Альтима строй</h3>
-      <p>Сайт строительной компании<br>
+          <h3>Альтима строй</h3>
+          <p class="mt-10">Сайт строительной компании<br>
 
-        <a class="button" href="https://swanschimmel.github.io/altima-build/">Открыть страницу</a>
-      </p>
-
-      <figure class="project-image">
-        <img src="files/akbuzat.png" width="928" height="536" alt="Cайт киностудии">
-      </figure>
-
-      <h3>Сайт киностудии Акбузат</h3>
-
-        <a class="button" href="https://akbuzat.com/">Открыть страницу</a>
+            <a class="button" href="https://swanschimmel.github.io/altima-build/">Открыть страницу</a>
+          </p>
+        </div>
 
 
+        <div class="col-sm-6">
+          <figure class="project-image">
+            <img class="img-fluid img-thumbnail" src="files/akbuzat.png" width="928" height="536" alt="Cайт киностудии">
+          </figure>
+
+          <h3>Сайт киностудии Акбузат</h3>
+
+            <a class="button" href="https://akbuzat.com/">Открыть страницу</a>
+        </div>
+
+        <div class="col-sm-6">
+          <figure class="project-image">
+            <img class="img-fluid img-thumbnail" src="files/diesel.png" width="928" height="536" alt="Лендинг">
+          </figure>
+          <h3>Лендинг</h3>
+          <p>Лендинг ремонта дизельных двигателей<br>
+
+          <a class="button" href="https://swanschimmel.github.io/diesel-sevice/">Открыть страницу</a>
+        </div>
+
+
+      <div class="col-sm-6">
         <figure class="project-image">
-          <img src="files/diesel.png" width="928" height="536" alt="Лендинг">
-        </figure>
-        <h3>Лендинг</h3>
-        <p>Лендинг ремонта дизельных двигателей<br>
-
-        <a class="button" href="https://swanschimmel.github.io/diesel-sevice/">Открыть страницу</a>
-        </p>
-
-        <figure class="project-image">
-          <img src="files/nerds.png" width="928" height="536" alt="Лендинг">
+          <img class="img-fluid img-thumbnail" src="files/nerds.png" width="928" height="536" alt="Лендинг">
         </figure>
         <h3>Веб-студия</h3>
         <p>Выпускная работа с курсов HTML Academy<br>
 
         <a class="button" href="https://htmlacademy-htmlcss.github.io/1389265-nerds-30/master/">Открыть страницу</a>
-        </p>
       </div>
     </div>
+  </div>
     </section>
 
     <footer class="page-footer">
@@ -108,5 +126,6 @@
         <a class="footer-phone" href="tel:+79273146010">+7 927 314 60 10</a>
       </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
