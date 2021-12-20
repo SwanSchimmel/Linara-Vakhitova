@@ -1,9 +1,13 @@
+html {
+  font-size: 16px;
+}
+
 body {
   position: relative;
   margin: 0;
-  min-width: 1408px;
+  /* min-width: 1408px; */
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 32px;
   color: #f2f2f2;
   background-color: #141530;
@@ -16,6 +20,8 @@ body {
   margin: 0 auto;
   padding: 0 16px;
 } */
+
+/* шапка */
 
 .page-header {
   margin: 0;
@@ -90,6 +96,8 @@ body {
   opacity: 0.5;
 }
 
+/* обо мне */
+
 .hero-image {
   position: relative;
   padding-top: 200px;
@@ -134,7 +142,7 @@ body {
   order: 2;
   margin: 0 0 0 -10px;
   width: 815px;
-  font-size: 96px;
+  font-size: 6rem;
   line-height: 112px;
   font-weight: 500;
 }
@@ -174,11 +182,11 @@ body {
 }
 
 .intro .container {
-  position: relative;
+  /* position: relative; */
 }
 
 .user-image {
-  position: absolute;
+  /* position: absolute; */
   margin: 0;
 }
 
@@ -189,7 +197,7 @@ body {
 }
 
 .intro .container div {
-  margin-left: 720px;
+  /* margin-left: 720px; */
   margin-bottom: 56px;
 }
 
@@ -327,7 +335,7 @@ body {
 }
 
 /*меню*/
-.main-menu {
+ .main-menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -349,4 +357,161 @@ body {
 .img-thumbnail {
   background-color: #dfd372;
   border: 1px solid #dfd372;
+}
+
+
+@media (min-width: 360px) {
+  .heading {
+    font-size: 2rem;
+    margin: 0 0 0 18px;
+  }
+
+  .page-header a, .page-footer a {
+    margin-right: 165px;
+  }
+
+  .hero-image p {
+    text-align: center;
+  }
+
+  .subheading {
+    font-size: 33px;
+    line-height: 49px;
+    margin: 0 0 33px;
+  }
+
+  .intro h3, .portfolio h3 {
+    font-size: 25px;
+  }
+
+  .intro p {
+    font-size: 15px;
+  }
+
+  .user-image img {
+    height: inherit;
+  }
+
+  .page-header a::after, .page-footer a::after {
+    position: inherit;
+  }
+
+  .main-menu {
+    float: inherit;
+  }
+
+  .contacts-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .contacts-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .page-header a, .page-footer a {
+    margin-right: 0;
+  }
+
+  .page-header a::after, .page-footer a::after {
+    position: inherit;
+  }
+
+  .heading {
+    text-align: center;
+    width: inherit;
+  }
+
+  .main-menu {
+    float: right;
+  }
+
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
+/* на md */
+@media (min-width: 992px) {
+  .heading {
+    font-size: 5rem;
+  }
+
+  .user-image img {
+    display: block;
+    margin: auto;
+  }
+}
+/* на lg */
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 6rem;
+  }
+
+  .contacts-flex {
+    flex-direction: inherit;
+    width: fit-content;
+  }
+
+  .page-header a, .page-footer a {
+    margin-right: 64px;
+  }
+
+  .page-header a::after, .page-footer a::after {
+    position: absolute;
+  }
+
+  .intro h3, .portfolio h3 {
+    font-size: 32px;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .intro .container {
+    position: relative;
+  }
+
+  .user-image {
+    position: absolute;
+    margin: 0;
+  }
+
+  .intro .container div {
+    margin-left: 720px;
+    margin-bottom: 56px;
+  }
+
+  .subheading {
+    margin: 0 0 100px;
+    font-size: 72px;
+    line-height: 88px;
+  }
+
+  .heading {
+    z-index: 1;
+    order: 2;
+    margin: 0 0 0 -10px;
+    width: 815px;
+    font-size: 6rem;
+    line-height: 112px;
+    text-align: unset;
+  }
+
+  .hero-image p {
+    text-align: unset;
+  }
 }
