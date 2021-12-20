@@ -360,7 +360,7 @@ body {
 }
 
 
-@media (min-width: 360px) {
+  @media (min-width: 360px) {
   .heading {
     font-size: 2rem;
     margin: 0 0 0 18px;
